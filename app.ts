@@ -1,17 +1,9 @@
-type Combinable = number | string;
-
-function combine(input1: Combinable, input2: Combinable) {
-  let result;
-  if (typeof input1 === "number" && typeof input2 === "number") {
-    result = input1 + input2;
-  } else {
-    result = input1.toString() + input2.toString();
-  }
-  return result;
+function add(n1: number, n2: number): number {
+  return n1 + n2;
 }
 
-const combineAges = combine(30, 26);
-console.log(combineAges);
+function printResult(num: number): void {
+  console.log("Result:" + num);
+}
 
-const combinedNames = combine("Sabina", "Dima");
-console.log(combinedNames);
+printResult(add(5, 12));
